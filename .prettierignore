@@ -1,0 +1,8 @@
+node_modules
+.yarn
+.next
+scripts
+.eslintrc.json
+.yarnrc.yml
+next-env.d.ts
+README.md
