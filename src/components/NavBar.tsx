@@ -15,11 +15,10 @@ type LinkItemProps = LinkProps & {
 const LinkItem = (props: LinkItemProps): JSX.Element => {
   const { href, path, children } = props
   const active = path == href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
   return (
     <NextLink href={href}>
-      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor} {...props}>
+      <Link p={2} textDecor={active ? 'underline' : undefined} color={useColorModeValue('gray.800', 'whiteAlpha.900')} {...props}>
         {children}
       </Link>
     </NextLink>

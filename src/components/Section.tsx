@@ -14,7 +14,7 @@ interface SectionProps {
 }
 
 export const Section = (props: SectionProps): JSX.Element => {
-  const { children, delay } = props
+  const { children, delay = 0 } = props
 
   return (
     <StyledDiv

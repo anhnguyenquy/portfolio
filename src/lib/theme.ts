@@ -36,7 +36,7 @@ const fonts = {
 }
 
 const colors = {
-  grassTeal: '#88CCCA'
+  
 }
 
 const config = {
