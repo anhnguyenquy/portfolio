@@ -182,15 +182,16 @@ const Home: NextPage = () => (
       <Heading as='h3' variant='section-title'>
         Resume
       </Heading>
-      <NextLink href='/miscellaneous/Resume.pdf'>
-        <Button
-          leftIcon={<DownloadIcon />}
-          colorScheme={useColorModeValue('teal', 'orange')}
-          mt={2}
-          as={Link}
-        >
-          Download
-        </Button>
+      <NextLink href='/miscellaneous/Resume.pdf' passHref>
+        <NoUnderlineLink download target='_blank'>
+          <Button
+            leftIcon={<DownloadIcon />}
+            colorScheme={useColorModeValue('teal', 'orange')}
+            mt={2}
+          >
+            Download
+          </Button>
+        </NoUnderlineLink>
       </NextLink>
     </Section>
 
