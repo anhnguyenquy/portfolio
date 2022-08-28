@@ -1,4 +1,4 @@
-import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, DownloadIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons'
 import { Box, Button, Container, Flex, Heading, Link, List, ListItem, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import NextLink from 'next/link'
@@ -127,9 +127,31 @@ const Home: NextPage = () => (
 
     <Section delay={0.3}>
       <Heading as='h3' variant='section-title'>
-        Social media
+        @me
       </Heading>
       <List>
+        <ListItem>
+          <NoUnderlineLink href='tel:84-814-730-247' target='_blank'>
+            <Button
+              variant='ghost'
+              colorScheme={useColorModeValue('teal', 'orange')}
+              leftIcon={<PhoneIcon />}
+            >
+              +84 814 730 247
+            </Button>
+          </NoUnderlineLink>
+        </ListItem>
+        <ListItem>
+          <NoUnderlineLink href='mailto:anhnguyenquy2407@gmail.com' target='_blank'>
+            <Button
+              variant='ghost'
+              colorScheme={useColorModeValue('teal', 'orange')}
+              leftIcon={<EmailIcon />}
+            >
+              anhnguyenquy2407@gmail.com
+            </Button>
+          </NoUnderlineLink>
+        </ListItem>
         <ListItem>
           <NoUnderlineLink href='https://github.com/anhnguyenquy' target='_blank'>
             <Button
