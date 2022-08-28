@@ -1,16 +1,23 @@
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, useColorMode } from '@chakra-ui/react'
 import Head from 'next/head'
 import { Router } from 'next/router'
-import { ReactNode } from 'react'
+import { Dispatch, ReactNode, SetStateAction, useEffect } from 'react'
 import { NavBar } from './NavBar'
 
-interface MainProps {
+interface LayoutProps {
   children?: ReactNode
   router?: Router
+  setMode: Dispatch<SetStateAction<'light' | 'dark'>>
 }
 
-export const Main = (props: MainProps): JSX.Element => {
-  const { children, router } = props
+export const Layout = (props: LayoutProps): JSX.Element => {
+  const { children, router, setMode } = props
+  
+  const { colorMode } = useColorMode()
+  useEffect(() => {
+    setMode(colorMode)
+  }, [colorMode])
+
   return (
     <Box as='main' pb='8'>
       <Head>

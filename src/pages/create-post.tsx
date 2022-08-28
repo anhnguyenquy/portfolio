@@ -1,9 +1,9 @@
-import { Button, Container, Flex, useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, useColorModeValue } from '@chakra-ui/react'
 import { Form, Formik } from 'formik'
 import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { InputField } from 'src/components'
+import { DatePickerField, InputField } from 'src/components'
 import { useUser } from 'src/hooks'
 
 interface CreatePostProps {
@@ -20,17 +20,22 @@ const CreatePost: NextPage<CreatePostProps> = () => {
   }, [user])
 
   return (
-    <Container width='xl' mt={6} p={4} borderRadius='10px' bgColor={useColorModeValue('white', undefined)} shadow={useColorModeValue('lg', undefined)}>
+    <Container w='full' maxW='800px' mt={6} p={4} borderRadius='10px' bgColor={useColorModeValue('white', undefined)} shadow={useColorModeValue('lg', undefined)}>
       <Formik
         initialValues={{ title: '', content: '', creationDate: new Date() }}
         onSubmit={async values => {
-
+          console.log(values)
         }}
       >
         {({ isSubmitting }) =>
           <Form>
-            <InputField name='title' placeholder='' label='Title' />
-            
+            <DatePickerField name='creationDate' label='Creation Date' />
+            <Box mt={4}>
+              <InputField name='title' placeholder='' label='Title' />
+            </Box>
+            <Box mt={4}>
+              <InputField name='content' placeholder='' label='Content' inputType='rte' />
+            </Box>
             <Flex justify='center'>
               <Button
                 type='submit'

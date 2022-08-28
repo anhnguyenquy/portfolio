@@ -5,6 +5,7 @@ import { ReactNode } from 'react'
 import { IoLogoGithub } from 'react-icons/io5'
 import { useUser } from 'src/hooks'
 import { Logo } from './Logo'
+import { NoUnderlineLink } from './NoUnderlineLink'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
 type LinkItemProps = LinkProps & {
@@ -91,10 +92,10 @@ export const NavBar = (props: NavBarProps): JSX.Element => {
           {
             user && (
               <NextLink href='/create-post' passHref>
-                <Link>
+                <NoUnderlineLink>
                   {/* eslint-disable-next-line react-hooks/rules-of-hooks */}
                   <Button colorScheme={useColorModeValue('teal', 'orange')} mr={2}>Create Post</Button>
-                </Link>
+                </NoUnderlineLink>
               </NextLink>
             )
           }

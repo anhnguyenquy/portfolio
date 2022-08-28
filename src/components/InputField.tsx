@@ -1,16 +1,22 @@
-import { FormControl, FormErrorMessage, FormLabel, Input, Textarea, useColorModeValue } from '@chakra-ui/react'
+import { Box, FormControl, FormErrorMessage, FormLabel, Input, Textarea, useColorModeValue } from '@chakra-ui/react'
 import { PropsOf } from '@chakra-ui/react'
+import { RichTextEditorProps } from '@mantine/rte'
 import autosize from 'autosize'
 import { useField } from 'formik'
+import dynamic from 'next/dynamic'
 import { InputHTMLAttributes, TextareaHTMLAttributes, useEffect, useRef } from 'react'
+import { RichText } from './RichText'
 
 type InputFieldProps =
+
   InputHTMLAttributes<HTMLInputElement> & PropsOf<typeof Input> &
-  TextareaHTMLAttributes<HTMLTextAreaElement> & PropsOf<typeof Textarea>
-  & {
+  TextareaHTMLAttributes<HTMLTextAreaElement> & PropsOf<typeof Textarea> &
+  Partial<RichTextEditorProps>
+  &
+  {
     label: string
     name: string
-    inputType?: 'input' | 'textarea' | 'quill'
+    inputType?: 'input' | 'textarea' | 'rte'
   }
 
 type InputComponentProps = InputHTMLAttributes<HTMLInputElement> & {
@@ -23,6 +29,11 @@ type TextAreaComponentProps = TextareaHTMLAttributes<HTMLTextAreaElement> & {
   label: string
   name: string
   size?: any
+}
+
+type RichTextComponentProps = Partial<RichTextEditorProps> & {
+  label: string
+  name: string
 }
 
 const InputComponent = (props: InputComponentProps): JSX.Element => {
@@ -57,6 +68,46 @@ const TextAreaComponent = (props: TextAreaComponentProps): JSX.Element => {
   )
 }
 
+const RichTextComponent = (props: RichTextComponentProps): JSX.Element => {
+  const { label, name, ...rest } = props
+  const [{ name: fieldName, value }, { error }, { setValue }] = useField<string>({ name })
+
+  const handleChange = (value: string) => {
+    setValue(value)
+  }
+  
+  return (
+    <FormControl isInvalid={!!error}>
+      <FormLabel htmlFor={fieldName}>{label}</FormLabel>
+      <Box
+        className='quill-container'
+        sx={{
+          '& .quill': {
+            '& .ql-toolbar': {
+              borderRadius: '5px 5px 0 0'
+            },
+            '& .ql-container': {
+              borderRadius: '0 0 5px 5px',
+              '& .ql-editor': {
+                minHeight: '10rem',
+              },
+            }
+          }
+        }}
+      >
+        <RichText
+          className='quill'
+          value={value}
+          onChange={handleChange}
+          id={fieldName}
+          {...rest}
+        />
+      </Box>
+      {error && <FormErrorMessage>{error}</FormErrorMessage>}
+    </FormControl>
+  )
+}
+
 export const InputField = (props: InputFieldProps): JSX.Element => {
   const { label, name, inputType = 'input', onQuillChangeEffect, ...rest } = props
   return (
@@ -70,8 +121,8 @@ export const InputField = (props: InputFieldProps): JSX.Element => {
         <TextAreaComponent label={label} name={name} {...rest} />
       }
       {
-        inputType == 'quill' &&
-        <></>
+        inputType == 'rte' &&
+        <RichTextComponent label={label} name={name} {...rest} />
       }
     </>
   )

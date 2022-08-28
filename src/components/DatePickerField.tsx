@@ -35,14 +35,14 @@ export const DatePickerField = (props: DatePickerFieldProps): JSX.Element => {
           wrapper: {
             input: {
               '&:focus-within': {
-                borderColor: '#48BB78',
-                boxShadow: '0 0 0 1px #48BB78',
+                borderColor: '#ED8936',
+                boxShadow: '0 0 0 1px #ED8936',
               }
             }
           },
-          yearPickerControlActive: { backgroundColor: '#48BB78', '&:hover': { backgroundColor: '#48BB78' } },
-          monthPickerControlActive: { backgroundColor: '#48BB78', '&:hover': { backgroundColor: '#48BB78' } },
-          day: { '&[data-selected]': { backgroundColor: '#48BB78' } }
+          yearPickerControlActive: { backgroundColor: '#ED8936', '&:hover': { backgroundColor: '#ED8936' } },
+          monthPickerControlActive: { backgroundColor: '#ED8936', '&:hover': { backgroundColor: '#ED8936' } },
+          day: { '&[data-selected]': { backgroundColor: '#ED8936' } }
         }}
         id={field.name}
         {...props}
