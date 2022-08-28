@@ -1,6 +1,7 @@
 import { Analytics, getAnalytics } from 'firebase/analytics'
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
+import { getAuth } from 'firebase/auth'
 import { __prod__ } from 'src/constants'
 
 const firebaseConfig = {
@@ -15,6 +16,7 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig)
 export const firestore = getFirestore(app)
+export const auth = getAuth(app)
 export let analytics: Analytics
 if (__prod__) {
   analytics = getAnalytics(app)

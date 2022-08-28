@@ -1,14 +1,13 @@
-import { EmailIcon, PhoneIcon } from '@chakra-ui/icons'
-import { Box, Button, Container, Flex, Heading, Link, List, ListIcon, ListItem, Text, UnorderedList, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Link, List, ListIcon, ListItem, Text, UnorderedList, useColorModeValue } from '@chakra-ui/react'
 import { NextPage } from 'next'
-import { BioSection, BioYear, NoUnderlineLink, ProfileImage, Section } from 'src/components'
 import NextLink from 'next/link'
+import { BioSection, BioYear, Section } from 'src/components'
 
-interface PortfolioProps {
+interface ResumeProps {
 
 }
 
-const Portfolio: NextPage<PortfolioProps> = () => {
+const Resume: NextPage<ResumeProps> = () => {
   return (
     <Container>
       <Box
@@ -389,4 +388,4 @@ const Portfolio: NextPage<PortfolioProps> = () => {
   )
 }
 
-export default Portfolio
+export default Resume

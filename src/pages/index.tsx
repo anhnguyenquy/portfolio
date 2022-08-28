@@ -67,7 +67,7 @@ const Home: NextPage = () => (
         &nbsp;and about to apply for a BSc in Computer Science.
       </Paragraph>
       <Box textAlign='center' my={4}>
-        <NextLink href='/portfolio' passHref scroll={false}>
+        <NextLink href='/resume' passHref scroll={false}>
           <Button rightIcon={<ChevronRightIcon />} colorScheme={useColorModeValue('teal', 'orange')}>
             More
           </Button>

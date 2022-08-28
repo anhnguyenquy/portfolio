@@ -1,8 +1,9 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Box, BoxProps, Container, Flex, Heading, IconButton, Link, LinkProps, Menu, MenuButton, MenuItem, MenuList, Stack, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Container, Flex, Heading, IconButton, Link, LinkProps, Menu, MenuButton, MenuItem, MenuList, Stack, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { ReactNode } from 'react'
 import { IoLogoGithub } from 'react-icons/io5'
+import { useUser } from 'src/hooks'
 import { Logo } from './Logo'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
@@ -32,6 +33,7 @@ type NavBarProps = BoxProps & {
 
 export const NavBar = (props: NavBarProps): JSX.Element => {
   const { path } = props
+  const user = useUser()
 
   return (
     <Box
@@ -65,8 +67,8 @@ export const NavBar = (props: NavBarProps): JSX.Element => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href='/portfolio' path={path}>
-            Portfolio
+          <LinkItem href='/resume' path={path}>
+            Resume
           </LinkItem>
           <LinkItem href='/posts' path={path}>
             Posts
@@ -85,38 +87,51 @@ export const NavBar = (props: NavBarProps): JSX.Element => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} textAlign='right'>
-          <ThemeToggleButton />
+        <Flex>
+          {
+            user && (
+              <NextLink href='/create-post' passHref>
+                <Link>
+                  {/* eslint-disable-next-line react-hooks/rules-of-hooks */}
+                  <Button colorScheme={useColorModeValue('teal', 'orange')} mr={2}>Create Post</Button>
+                </Link>
+              </NextLink>
+            )
+          }
+          <Box flex={1} textAlign='right'>
+            <ThemeToggleButton />
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id='navbar-menu'>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant='outline'
-                aria-label='Options'
-              />
-              <MenuList>
-                <NextLink href='/' passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href='/portfolio' passHref>
-                  <MenuItem as={Link}>Portfolio</MenuItem>
-                </NextLink>
-                <NextLink href='/posts' passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href='https://github.com/anhnguyenquy/portfolio'
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
+            <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+              <Menu isLazy id='navbar-menu'>
+                <MenuButton
+                  as={IconButton}
+                  icon={<HamburgerIcon />}
+                  variant='outline'
+                  aria-label='Options'
+                />
+                <MenuList bgColor='#434347'>
+                  <NextLink href='/' passHref>
+                    <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>About</MenuItem>
+                  </NextLink>
+                  <NextLink href='/portfolio' passHref>
+                    <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>Portfolio</MenuItem>
+                  </NextLink>
+                  <NextLink href='/posts' passHref>
+                    <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>Posts</MenuItem>
+                  </NextLink>
+                  <MenuItem
+                    as={Link}
+                    href='https://github.com/anhnguyenquy/portfolio'
+                    _hover={{ boxShadow: 'none' }}
+                  >
+                    View Source
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
           </Box>
-        </Box>
+        </Flex>
       </Container>
-    </Box>
+    </Box >
   )
 }
