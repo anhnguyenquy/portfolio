@@ -1,4 +1,4 @@
-import { Analytics, getAnalytics } from 'firebase/analytics'
+import { Analytics, getAnalytics, isSupported } from 'firebase/analytics'
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
@@ -18,6 +18,6 @@ export const app = initializeApp(firebaseConfig)
 export const firestore = getFirestore(app)
 export const auth = getAuth(app)
 export let analytics: Analytics
-if (__prod__) {
+if (__prod__ && isSupported()) {
   analytics = getAnalytics(app)
 }
