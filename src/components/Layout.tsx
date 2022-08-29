@@ -22,6 +22,7 @@ export const Layout = (props: LayoutProps): JSX.Element => {
     <Box as='main' pb='8'>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta name='description' content="Anh Nguyen Quy's portfolio" />
         <title>Anh Nguyen Quy</title>
       </Head>
       <NavBar path={router.asPath} />

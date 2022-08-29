@@ -1,10 +1,12 @@
 import { Box, Button, Container, Flex, useColorModeValue } from '@chakra-ui/react'
+import { addDoc, collection } from 'firebase/firestore'
 import { Form, Formik } from 'formik'
 import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { DatePickerField, InputField } from 'src/components'
 import { useUser } from 'src/hooks'
+import { firestore } from 'src/lib'
 
 interface CreatePostProps {
 
@@ -24,7 +26,8 @@ const CreatePost: NextPage<CreatePostProps> = () => {
       <Formik
         initialValues={{ title: '', content: '', creationDate: new Date() }}
         onSubmit={async values => {
-          console.log(values)
+          const docRef = await addDoc(collection(firestore, 'posts'), values)
+          router.push(`/post/${docRef.id}`)
         }}
       >
         {({ isSubmitting }) =>

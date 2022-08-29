@@ -7,7 +7,7 @@ interface PostsProps {
 const Posts: NextPage<PostsProps> = () => { 
   return (
     <>
-
+      WIP
     </>
   )
 }

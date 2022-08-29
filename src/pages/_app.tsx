@@ -10,7 +10,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
 
   return (
     <MantineProvider theme={{ colorScheme: mode }}>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider theme={theme} >
         <Fonts />
         <Layout router={router} setMode={setMode}>
           <Component {...pageProps} key={router.route} />
