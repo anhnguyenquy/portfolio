@@ -26,7 +26,7 @@ const Home: NextPage = () => (
           Anh Nguyen Quy
         </Heading>
         <Text>
-          Communist Developer ( Marxist-Leninist / Full-stack )
+          Full-Stack JS/TS Developer
         </Text>
       </Box>
       <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign='center'>
@@ -41,9 +41,8 @@ const Home: NextPage = () => (
           overflow='hidden'
         >
           <ProfileImage
-            src='/images/avatar.jpg'
+            src='/images/3.jpg'
             alt='Profile Image'
-            borderRadius='full'
             width='100%'
             height='100%'
           />
@@ -56,15 +55,16 @@ const Home: NextPage = () => (
         About
       </Heading>
       <Paragraph>
-        I&apos;m a technology enthusiast and Marxist-Leninist from
+        I&apos;m a technology enthusiast from
         Hanoi, Vietnam. My primary fields of interest are full-stack software development,
-        cybersecurity, and revolutionary class-based politics. Technologies that I&apos;m
-        familiar with include React, Next.js, Express.js, REST, GraphQL, SQL, MongoDB, and Firebase.
+        cybersecurity, and Marxist politics. Technologies that I&apos;m
+        familiar with include React, Next.js, React Native, Express.js, REST/GraphQL APIs, SQL/NoSQL databases,
+        Amazon Web Services, Google Cloud Platform, and Azure.
         Currently, I&apos;m in my last year at&nbsp;
         <NextLink href='http://hn-ams.edu.vn' passHref scroll={false}>
           <Link>Hanoi-Amsterdam High School</Link>
         </NextLink>
-        &nbsp;and about to apply for a BSc in Computer Science.
+        &nbsp;and applying to study for a BSc in Computer Science.
       </Paragraph>
       <Box textAlign='center' my={4}>
         <NextLink href='/resume' passHref scroll={false}>
@@ -121,7 +121,7 @@ const Home: NextPage = () => (
         <Link href='https://www.marxists.org' target='_blank'>
           Marxism
         </Link>
-        , History, and Politics
+        , History, Politics
       </Paragraph>
     </Section>
 
@@ -164,7 +164,7 @@ const Home: NextPage = () => (
           </NoUnderlineLink>
         </ListItem>
         <ListItem>
-          <NoUnderlineLink href='https://www.linkedin.com/in/anh-nguyen-4366791b5' target='_blank'>
+          <NoUnderlineLink href='https://www.linkedin.com/in/anh-nguyen-quy-4366791b5/' target='_blank'>
             <Button
               variant='ghost'
               colorScheme={useColorModeValue('teal', 'orange')}
@@ -195,7 +195,7 @@ const Home: NextPage = () => (
           title="Debaters' toolkit"
           thumbnail={thumbDebatersToolkit}
         >
-          an multi-platform application for the Vietnamese Debate Community
+          a multi-platform application for the Vietnamese Debate Community
         </GridItem>
       </SimpleGrid>
     </Section>

@@ -21,8 +21,8 @@ const Resume: NextPage<ResumeProps> = () => {
       >
         about my education, extracurriculars, and qualifications
       </Box>
-      
-      
+
+
       <Section delay={0.1}>
         <Heading as='h3' variant='section-title'>
           Education
@@ -58,11 +58,11 @@ const Resume: NextPage<ResumeProps> = () => {
           </Heading>
           <Flex align='center' mt={2}>
             <Text fontWeight='bold' minW='265px'>IELTS</Text>
-            <Text>To be taken this year</Text>
+            <Text>9.0</Text>
           </Flex>
           <Flex align='center' mt={1}>
             <Text fontWeight='bold' minW='265px'>SAT</Text>
-            <Text>1540 (750 EVBRW, 790 Math)</Text>
+            <Text>1540 (750 EBRW, 790 Math)</Text>
           </Flex>
           <Flex align='center' mt={1}>
             <Text fontWeight='bold' minW='265px'>AP Computer Science A</Text>
@@ -91,68 +91,81 @@ const Resume: NextPage<ResumeProps> = () => {
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
             <NextLink href='https://www.facebook.com/puzzles.ams' passHref>
-              <Link color='white' target='_blank'>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
                 Puzzles Ams Debate Club
               </Link>
             </NextLink>
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>The competitive debate club of Hanoi-Amsterdam High School for the Gifted</Text>
-          <Text fontSize='xs' mt='0.375rem'>Oct 2020 - Aug 2021, Debater</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>Oct 2020 - Aug 2021, Debater</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Competed in debate tournaments nationally</ListItem>
             <ListItem>Participated in weekly training sessions</ListItem>
-            <ListItem>Created a debate motion database with 197 motions in both English and Vietnamese with other club members</ListItem>
-            <ListItem>Acted as a Plaintiff&apos;s Attorney in a Mock Trial event that attracted over 100 participants</ListItem>
+            <ListItem>Competed in debate tournaments nationally</ListItem>
+            <ListItem>Created a database with 1000 debate motions in both English and Vietnamese</ListItem>
+            <ListItem>Acted as a Plaintiff’s Attorney in a Mock Trial event that attracted over 200 participants</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
             <NextLink href='https://www.facebook.com/mun.hnams/' passHref>
-              <Link color='white' target='_blank'>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
                 Hanoi-Amsterdam Model UN Association
               </Link>
             </NextLink>
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>The competitive MUN club of Hanoi-Amsterdam High School for the Gifted</Text>
-          <Text fontSize='xs' mt='0.375rem'>Oct 2020 - Aug 2021, Member</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>Oct 2020 - Aug 2021, Member</Text>
           <UnorderedList mt={1} fontSize='xs'>
             <ListItem>Participated in weekly training sessions</ListItem>
-            <ListItem>Led the club in organizing a mock MUN conference for the United Nations Environment Program, participated in the writing of a detailed 7500-word Guidebook on the topic of Environmental Racism as well as chaired the Conference</ListItem>
+            <ListItem>Participated in over 10 MUN conferences nationwide as either Delegate, Content Developer, Chair, Crisis Director, or Secretary-General</ListItem>
+            <ListItem>
+              Led the club in organizing a mock MUN conference by:
+              <br />
+              + Assigning and monitoring the tasks of the club’s 30 members over 2 months of preparation
+              <br />
+              + Planning the timeline and logistics of the conference
+              <br />
+              + Standardizing the research and delegate selection process
+              <br />
+              + Directing the writing of a detailed 7500-word Guidebook on the topic of Environmental Racism
+              <br />
+              + Chairing the conference’s sole committee: the United Nations Environment Programme Committee
+            </ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
             <NextLink href='https://www.hanoimun.org/' passHref>
-              <Link color='white' target='_blank'>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
                 Hanoi Model United Nations Organizations
               </Link>
             </NextLink>
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>A professional student-led organization</Text>
-          <Text fontSize='xs' mt='0.375rem'>2021, Crisis Director</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>2021, Crisis Director</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>1 of the 4 Crisis Directors of the Joint Historical Crisis Council (JHCC) featuring the American Revolution for HMUN 7th Session</ListItem>
-            <ListItem>Participated in the writing of a comprehensive Guidebook</ListItem>
-            <ListItem>Marked delegates&apos; applications for the Conference</ListItem>
+            <ListItem>1 of 4 Crisis Directors of the Joint Historical Crisis Council (JHCC)</ListItem>
+            <ListItem>Led JHCC’s staff members in preparing the committee’s content, marking delegates’ applications, and interviewing potential delegates</ListItem>
+            <ListItem>Chief Writer of 2 comprehensive Guidebooks on the topic of the American Revolution, one for the British Cabinet and one for the American Cabinet. Each Guidebook is approximately 8500 words long.</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
             <NextLink href='https://ivmun.org/' passHref>
-              <Link color='white' target='_blank'>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
                 International Vietnam Model United Nations Conference
               </Link>
             </NextLink>
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>One of the biggest and most prestigious MUN conferences in Vietnam alongside HMUN and VYMUN</Text>
-          <Text fontSize='xs' mt='0.375rem'>2021, Crisis Director</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>2021, Crisis Director</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>1 of the 4 Crisis Directors of the United Nations Security Council (UNSC) on the topic of the Kashmir conflict for IVMUN 2021</ListItem>
-            <ListItem>Participated in the writing of a comprehensive Guidebook</ListItem>
-            <ListItem>Marked delegates&apos; applications for the Conference</ListItem>
+            <ListItem>1 of 4 Crisis Directors of the United Nations Security Council (UNSC)</ListItem>
+            <ListItem>Led UNSC’s staff members in preparing the committee’s content, marking delegates’ applications, and interviewing potential delegates</ListItem>
+            <ListItem>Chief Writer of a 6000-word Guidebook on the Kashmir conflict</ListItem>
           </UnorderedList>
         </Box>
 
@@ -161,27 +174,27 @@ const Resume: NextPage<ResumeProps> = () => {
             Ams Model United Nations Conference
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>The annual MUN conference of Hanoi-Amsterdam Model UN Association</Text>
-          <Text fontSize='xs' mt='0.375rem'>2021, Secretary-General</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>2021, Secretary-General</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Directly managed the following departments: Content, Event, and Media</ListItem>
-            <ListItem>Organized 3 committees of the United Nations: The United Nations Educational, Scientific and Cultural Organization (UNESCO), the United Nations Environment Programme (UNEP), and the United Nations Security Council (UNSC)</ListItem>
+            <ListItem>Directly managed over 50 staff members in the following departments: Content, Human Resources, Logistics, Media, and Finance</ListItem>
+            <ListItem>Organized the following 3 UN Committees for over 250 delegates: The United Nations Educational, Scientific and Cultural Organization (UNESCO), the United Nations Environment Programme (UNEP), and the United Nations Security Council (UNSC)</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
             <NextLink href='https://gart6520.com/' passHref>
-              <Link color='white' target='_blank'>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
                 Green Ams Robotics Team 6520
               </Link>
             </NextLink>
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>The robotíc club of Hanoi-Amsterdam High School for the Gifted and Vietnam&apos;s first and only team competing in the FIRST Robotics Competition</Text>
-          <Text fontSize='xs' mt='0.375rem'>Oct 2021- May 2022, Member of the Programming and Electronics Division</Text>
+          <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>Oct 2021 - May 2022, Member of the Programming and Electronics Division</Text>
           <UnorderedList mt={1} fontSize='xs'>
             <ListItem>Participated weekly training sessions and learned how to wire an FRC Robot as well as program its multiple hardware components using Java</ListItem>
-            <ListItem>Participated in the club&apos;s Mock event where the club was split into 2 opposing teams who shall then compete in a simulation of an actual FRC game. Helped build the robot by wiring the Robot Control System and programmed the robot to be able to run automatically or manually under the control of a human using an Xbox Controller</ListItem>
-            <ListItem>Participated in the Power Up Ams 2022 event. Helped prepare the curriculum and taught Python to 6th-8th grade kids in a 2-week online boot camp</ListItem>
+            <ListItem>Participated in the club’s Mock event where the club was split into 2 opposing teams who then competed in a simulation of an actual FRC game. Helped build the robot by wiring the Robot Control System and programmed the robot to be able to run automatically or manually under the control of a human using an Xbox Controller</ListItem>
+            <ListItem>Participated in the Power Up Ams 2022 event. Helped prepare the curriculum and taught Python to 70 6th-8th grade students in a 2-week online bootcamp</ListItem>
           </UnorderedList>
         </Box>
 
@@ -191,10 +204,10 @@ const Resume: NextPage<ResumeProps> = () => {
           </Heading>
           <Text fontSize='sm' mt={1} fontStyle='italic'>Other participated events, projects and activities</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Helped build a 20-week curriculum and taught 6th-8th grade students micro:bit programming using Microsoft MakeCode</ListItem>
             <ListItem>Helped rebuild the website of the Vietnam National University (VNU) from a Wordpress website to a PHP Laravel application</ListItem>
+            <ListItem>Advanced to the Semi-Final round of Build On Vietnam 2022, a national hackathon for college students</ListItem>
+            <ListItem>Helped build a 20-week curriculum and taught 25 6th-8th grade students micro:bit programming with Microsoft MakeCode</ListItem>
             <ListItem>Tutored a 9th-grade student who successfully passed the high school entrance exam and got into Hanoi-Amsterdam High School for the Gifted</ListItem>
-            <ListItem>Participated in Build On Vietnam 2022, a national hackathon for college students</ListItem>
           </UnorderedList>
         </Box>
       </Section>
@@ -212,14 +225,56 @@ const Resume: NextPage<ResumeProps> = () => {
               </Link>
             </NextLink>
           </Heading>
-          <Text fontSize='sm' mt={1} fontStyle='italic'>An application which generates debate motions based on various criteria, calculate break chances for debate tournaments and helps adjudicators do timekeeping for various debate formats.</Text>
+          <Text fontSize='sm' mt={1}>
+            Source code:&nbsp;
+            <NextLink href='https://github.com/anhnguyenquy/debaters-toolkit' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                https://github.com/anhnguyenquy/debaters-toolkit
+              </Link>
+            </NextLink>
+          </Text>
+          <Text fontSize='sm' mt={1} fontStyle='italic'>An application which generates debate motions based on various criteria, calculates break chances for debate tournaments and helps adjudicators do timekeeping for various debate formats.</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Built the application with ReactJS, Firebase, and Node.js</ListItem>
-            <ListItem>Hosted the app on Netlify and added HTTPS to the app with a TLS certificate from Let&apos;s Encrypt</ListItem>
-            <ListItem>Added offline capabilities to the app by making it a Progressive Web App (PWA) in addition to being an online web-application</ListItem>
+            <ListItem>Built the application with ReactJS and Firebase</ListItem>
+            <ListItem>Hosted the app on Netlify and added HTTPS with a TLS certificate from Let’s Encrypt</ListItem>
+            <ListItem>Added offline capabilities to the app by making it a Progressive Web App (PWA)</ListItem>
             <ListItem>Made the app available on native platforms i.e. Windows (using Electron) and Android (using Ionic and Capacitor)</ListItem>
-            <ListItem>Gathered and translated over 7,300 debate motions and translated them into Vietnamese for the Vietnamese Debate Community</ListItem>
-            <ListItem>The application has 200 monthly active users</ListItem>
+            <ListItem>Gathered over 7,300 debate motions and translated them into Vietnamese for the Vietnamese Debate Community</ListItem>
+            <ListItem>Added extensive documentation to help other developers contribute or rebuild the project from scratch</ListItem>
+            <ListItem>The application has 250 monthly active users</ListItem>
+          </UnorderedList>
+        </Box>
+
+        <Box>
+          <Heading as='h2' mt='1.5rem' size='sm'>
+            <NextLink href='https://gpt-3-chat.netlify.app/' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                GPT-3 AI Chat
+              </Link>
+            </NextLink>
+          </Heading>
+          <Text fontSize='sm' mt={1}>
+            Source code:&nbsp;
+            <br />
+            + Frontend:&nbsp;
+            <NextLink href='https://github.com/anhnguyenquy/gpt-3-chat-frontend' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                https://github.com/anhnguyenquy/gpt-3-chat-frontend
+              </Link>
+            </NextLink>
+            <br />
+            + Backend:&nbsp;
+            <NextLink href='https://github.com/anhnguyenquy/gpt-3-chat-backend' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                https://github.com/anhnguyenquy/gpt-3-chat-backend
+              </Link>
+            </NextLink>
+          </Text>
+          <Text fontSize='sm' mt={1} fontStyle='italic'>Prototype for a web app that allows users to chat with OpenAI’s GPT-3</Text>
+          <UnorderedList mt={1} fontSize='xs'>
+            <ListItem>Built the frontend with ReactJS, deployed it to Netlify, and added HTTPS with a TLS certificate from Let’s Encrypt</ListItem>
+            <ListItem>Built the backend with Express.js to provide a REST API for the frontend. The backend serves as a middleman between the frontend and OpenAI’s API. Deployed the backend to Heroku.</ListItem>
+            <ListItem>The application provides an authentic chatting experience with the user interface resembling Messenger’s and is therefore highly familiar while the AI is highly intelligent, capable of engaging in meaningful conversations and performing complex tasks e.g. writing essays, explaining code, checking the weather, summarizing historical events, etc.</ListItem>
           </UnorderedList>
         </Box>
 
@@ -231,33 +286,56 @@ const Resume: NextPage<ResumeProps> = () => {
               </Link>
             </NextLink>
           </Heading>
-          <Text fontSize='sm' mt={1} fontStyle='italic'>A social media platform on which young people can find job offers in addition to clubs, internships, projects, and extracurricular activities in general</Text>
+          <Text fontSize='sm' mt={1}>
+            Source code:&nbsp;
+            <br />
+            + Frontend:&nbsp;
+            <NextLink href='https://github.com/anhnguyenquy/Build-On-Vietnam-2022-Frontend' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                https://github.com/anhnguyenquy/Build-On-Vietnam-2022-Frontend
+              </Link>
+            </NextLink>
+            <br />
+            + Backend:&nbsp;
+            <NextLink href='https://github.com/anhnguyenquy/Build-On-Vietnam-2022-Backend' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                https://github.com/anhnguyenquy/Build-On-Vietnam-2022-Backend
+              </Link>
+            </NextLink>
+          </Text>
+          <Text fontSize='sm' mt={1} fontStyle='italic'>A social media platform on which young people can find job offers/internships in addition to clubs, projects, and other extracurricular activities</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Designed the UI using Figma</ListItem>
+            <ListItem>Designed the UI using Figma:<br />
+              <NextLink href='https://www.figma.com/community/file/1168204272872176563' passHref>
+                <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                  https://www.figma.com/community/file/1168204272872176563
+                </Link>
+              </NextLink>
+            </ListItem>
             <ListItem>Built the frontend with Next.js and deployed to Vercel</ListItem>
-            <ListItem>Built the backend server with Express.js, GraphQL, PostgreSQL, Redis, and Firestore</ListItem>
+            <ListItem>Built the backend with Express.js, GraphQL, PostgreSQL, Redis, and Firestore</ListItem>
             <ListItem>
               Made use of the following AWS services:
               <List>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
-                  EC2
+                  Elastic Compute Cloud (EC2)
                 </ListItem>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
-                  RDS
+                  Relational Database Service (RDS)
                 </ListItem>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
-                  ElastiCache
+                  ElastiCache/MemoryDB
                 </ListItem>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
-                  S3
+                  Simple Storage Service (S3)
                 </ListItem>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
-                  Simple Email Service
+                  Simple Email Service (SES)
                 </ListItem>
                 <ListItem>
                   <ListIcon as={() => <>+&nbsp;&nbsp;</>} />
@@ -266,42 +344,53 @@ const Resume: NextPage<ResumeProps> = () => {
               </List>
             </ListItem>
             <ListItem>Deployed the server to an AWS EC2 instance using Dokku</ListItem>
-            <ListItem>The application features spaces; each Space is a community where people can create and apply to job offers, club recruitment offers, etc. as well as make posts that are linked to a specific topic. For instance, s/CompSci would contain all the posts, job/internship offers, and recruitment offers for clubs/projects related to the field of Computer Science that people made. Spaces can be subscribed to and their posts can be shared, commented on, or voted on.</ListItem>
-            <ListItem>A real-time chat feature implemented with Firestore is included.</ListItem>
+            <ListItem>The application features Spaces; each Space is a community where people can create and apply to job offers, club recruitment offers, etc. as well as make posts that are linked to a specific topic. For instance, s/CompSci would contain posts, job/internship offers, and clubs/projects recruitment offers related to the field of Computer Science. Spaces can be subscribed to and their posts can be shared, commented on, or voted on.</ListItem>
+            <ListItem>Implemented a real-time chat feature with Firestore</ListItem>
             <ListItem>Visualized data generated by people&apos;s usage using AWS QuickSight</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
-            IOT Syringe Infusion Pump
+            <NextLink href='https://drive.google.com/file/d/1eKHoO2DopkUVrH0CLtqvBbmBfEKjN6nf/view' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                IOT Syringe Infusion Pump
+              </Link>
+            </NextLink>
           </Heading>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Helped build an IOT Syringe Infusion Pump in a team of 5 for the AI-JAM US 2021 Competition</ListItem>
-            <ListItem>This syringe pump allows doctors to set, modify the flow, stop the infusion of the pump over the internet as per patient response. It also keeps track of all the commands used by doctors in a safety log for data inspection if needed.</ListItem>
+            <ListItem>Led a team of 5 in building an IOT Syringe Infusion Pump for the AI-JAM US 2021 Competition organized by the International Association for the Promotion of Advanced Innovation</ListItem>
+            <ListItem>This syringe pump allows doctors to control and adjust the injection of drugs into patients over the Internet. It also keeps track of all the commands used by doctors in a safety log for data inspection if needed.</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
-            IOT Bracelet to assist blind people
+            <NextLink href='https://drive.google.com/file/d/139NTPe6OdHZV2gij3365tBFjB6TEI1OA/view?usp=sharing' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                IOT Bracelet to assist blind people
+              </Link>
+            </NextLink>
           </Heading>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Helped build an IOT Bracelet to assist blind people in a team of 7 for the 45th INOVA International Invention Show</ListItem>
-            <ListItem>The bracelet uses an ultrasonic distance sensor to detect nearby objects and alerts the wearer about them.</ListItem>
-            <ListItem>The device also collects GPS data and heart rate/blood oxygen concentration from the wearer and uploads such data to a cloud server for statistics monitoring.</ListItem>
+            <ListItem>Led a team of 7 in building an IOT Bracelet to assist blind people for INOVA 2021, 45th International Invention Show organized by the World Invention Intellectual Property Associations</ListItem>
+            <ListItem>The bracelet uses an ultrasonic distance sensor to detect nearby objects and alerts the wearer about them. It also collects GPS data, heart rate, and blood oxygen levels from the wearer and uploads such data to a cloud server for monitoring.</ListItem>
           </UnorderedList>
         </Box>
 
         <Box>
           <Heading as='h2' mt='1.5rem' size='sm'>
-            IOT stroke-monitoring and alert device
+            <NextLink href='https://drive.google.com/file/d/1pSnjQLgZ2PoyUsKzzDybHW9-CbbVZ0ZG/view?usp=sharing' passHref>
+              <Link color={useColorModeValue('black', 'white')} target='_blank'>
+                IOT stroke-monitoring and alert device
+              </Link>
+            </NextLink>
           </Heading>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Helped build an IOT stroke-monitoring and alert device in a team of 6 for the 2021 Advanced Innovation Global Competition (AIGC) hosted in Singapore</ListItem>
-            <ListItem>The bracelet uses an accelerometer and gyroscope sensor to measure the 3D coordinates of the wearer as well as a pulse-oximeter and heart-rate sensor to measure the oxygen level and heart-rate of the wearer.</ListItem>
+            <ListItem>Led a team of 6 in building an IOT stroke-monitoring and alert device for the 2021 Advanced Innovation Global Competition organized by the International Association for the Promotion of Advanced Innovation</ListItem>
+            <ListItem>The bracelet uses an accelerometer and gyroscope sensor to measure the 3D coordinates of the wearer as well as a pulse-oximeter and heart-rate sensor to measure the blood oxygen level and heart-rate of the wearer.</ListItem>
             <ListItem>The data from the two sensors is displayed onto an OLED Screen and uploaded to an online Blynk server for constant monitoring.</ListItem>
-            <ListItem>In the event where a stroke is determined to have happened, the device triggers buzzers into making noises to alert surrounding people as well as sends an SMS text and makes a phone call to a preset phone number using a SIM module to alert that person about the stroke.</ListItem>
+            <ListItem>In the event where a stroke is determined to have happened, the device triggers buzzers into making noises to alert surrounding people as well as sends an SMS text and makes a call to a preset phone number using a SIM module to alert that person about the stroke.</ListItem>
           </UnorderedList>
         </Box>
       </Section>
@@ -312,8 +401,8 @@ const Resume: NextPage<ResumeProps> = () => {
         </Heading>
 
         <Box fontSize='sm'>
-          <Text fontWeight='bold'>Hanoi Municipal English 9th-grade Olympiad</Text>
-          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Second Prize</Text>
+          <Text fontWeight='bold'>English Municipal Academic Competition</Text>
+          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Second Prize in 9th and 11th grade</Text>
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Hanoi Model United Nations Mock #12</Text>
@@ -330,10 +419,6 @@ const Resume: NextPage<ResumeProps> = () => {
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Advanced Innovation Global Competition 2021</Text>
           <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Gold Award</Text>
-        </Box>
-        <Box fontSize='sm' mt={2}>
-          <Text fontWeight='bold'>Hanoi Municipal English 12th-grade Olympiad</Text>
-          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Second Prize</Text>
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Udemy</Text>
@@ -361,14 +446,14 @@ const Resume: NextPage<ResumeProps> = () => {
         <Heading as='h3' variant='section-title'>
           Skills
         </Heading>
-        
+
         <Box fontSize='sm'>
           <Text fontWeight='bold'>Programming</Text>
           <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>JavaScript, TypeScript, Python, Java, C, Arduino, Bash, PHP</Text>
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Web, APIs & Databases</Text>
-          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>HTML, CSS, Tailwind, Firebase, MongoDB, SQL (PostgreSQL & MySQL), Redis, REST, GraphQL</Text>
+          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>HTML, CSS, Tailwind, ChakraUI, REST, GraphQL, Firestore, MongoDB, SQL (PostgreSQL & MySQL), Redis</Text>
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Frameworks</Text>
@@ -376,7 +461,11 @@ const Resume: NextPage<ResumeProps> = () => {
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Tech</Text>
-          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Git, Docker, Dokku, SSH, VSCode, Vim, Postman, Insomnia, DataGrip, IntelliJ, PyCharm, CLion, MS Office</Text>
+          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Linux (Debian), VSCode, Vim, IntelliJ, PyCharm, CLion, DataGrip, Postman, Insomnia, Git, Docker, Figma, Jira, Confluence, MS Office</Text>
+        </Box>
+        <Box fontSize='sm' mt={2}>
+          <Text fontWeight='bold'>Cloud</Text>
+          <Text color={useColorModeValue('gray.500', 'gray.400')} fontWeight='bold'>Amazon Web Services, Google Cloud Platform, Azure, DigitalOcean, Heroku, Dokku, Vercel, Netlify</Text>
         </Box>
         <Box fontSize='sm' mt={2}>
           <Text fontWeight='bold'>Languages</Text>

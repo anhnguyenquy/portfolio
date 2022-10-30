@@ -110,7 +110,7 @@ export const NavBar = (props: NavBarProps): JSX.Element => {
                   variant='outline'
                   aria-label='Options'
                 />
-                <MenuList bgColor='#434347'>
+                <MenuList>
                   <NextLink href='/' passHref>
                     <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>About</MenuItem>
                   </NextLink>
