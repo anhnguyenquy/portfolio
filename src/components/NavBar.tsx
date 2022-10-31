@@ -114,8 +114,8 @@ export const NavBar = (props: NavBarProps): JSX.Element => {
                   <NextLink href='/' passHref>
                     <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>About</MenuItem>
                   </NextLink>
-                  <NextLink href='/portfolio' passHref>
-                    <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>Portfolio</MenuItem>
+                  <NextLink href='/resume' passHref>
+                    <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>Resume</MenuItem>
                   </NextLink>
                   <NextLink href='/posts' passHref>
                     <MenuItem as={Link} _hover={{ boxShadow: 'none' }}>Posts</MenuItem>

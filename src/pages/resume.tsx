@@ -206,8 +206,8 @@ const Resume: NextPage<ResumeProps> = () => {
           <UnorderedList mt={1} fontSize='xs'>
             <ListItem>Helped rebuild the website of the Vietnam National University (VNU) from a Wordpress website to a PHP Laravel application</ListItem>
             <ListItem>Advanced to the Semi-Final round of Build On Vietnam 2022, a national hackathon for college students</ListItem>
-            <ListItem>Helped build a 20-week curriculum and taught 25 6th-8th grade students micro:bit programming with Microsoft MakeCode</ListItem>
-            <ListItem>Tutored a 9th-grade student who successfully passed the high school entrance exam and got into Hanoi-Amsterdam High School for the Gifted</ListItem>
+            <ListItem>Helped build a 20-week curriculum and taught 30 6th-8th grade students micro:bit programming with Microsoft MakeCode</ListItem>
+            <ListItem>Tutored 10 9th-graders student who all successfully passed the high school entrance exam and got into Hanoi-Amsterdam High School for the Gifted</ListItem>
           </UnorderedList>
         </Box>
       </Section>
