@@ -34,17 +34,17 @@ const Home: NextPage = () => (
           borderColor='whiteAlpha.800'
           borderWidth={2}
           borderStyle='solid'
-          w='100px'
-          h='100px'
+          w='125px'
+          h='125px'
           display='inline-block'
           borderRadius='full'
           overflow='hidden'
         >
           <ProfileImage
-            src='/images/3.jpg'
+            src='/images/_MG_6417.jpg'
             alt='Profile Image'
-            width='100%'
-            height='100%'
+            width='130%'
+            height='130%'
           />
         </Box>
       </Box>
