@@ -176,8 +176,8 @@ const Resume: NextPage<ResumeProps> = () => {
           <Text fontSize='sm' mt={1} fontStyle='italic'>The annual MUN conference of Hanoi-Amsterdam Model UN Association</Text>
           <Text fontSize='xs' mt='0.375rem' fontWeight='semibold'>2021, Secretary-General</Text>
           <UnorderedList mt={1} fontSize='xs'>
-            <ListItem>Directly managed over 50 staff members in the following departments: Content, Human Resources, Logistics, Media, and Finance</ListItem>
-            <ListItem>Organized the following 3 UN Committees for over 250 delegates: The United Nations Educational, Scientific and Cultural Organization (UNESCO), the United Nations Environment Programme (UNEP), and the United Nations Security Council (UNSC)</ListItem>
+            <ListItem>Directly managed over 100 staff members in the following departments: Content, Human Resources, Logistics, Media, and Finance</ListItem>
+            <ListItem>Organized the following 3 UN Committees for over 500 delegates: The United Nations Educational, Scientific and Cultural Organization (UNESCO), the United Nations Environment Programme (UNEP), and the United Nations Security Council (UNSC)</ListItem>
           </UnorderedList>
         </Box>
 
@@ -194,7 +194,7 @@ const Resume: NextPage<ResumeProps> = () => {
           <UnorderedList mt={1} fontSize='xs'>
             <ListItem>Participated weekly training sessions and learned how to wire an FRC Robot as well as program its multiple hardware components using Java</ListItem>
             <ListItem>Participated in the club’s Mock event where the club was split into 2 opposing teams who then competed in a simulation of an actual FRC game. Helped build the robot by wiring the Robot Control System and programmed the robot to be able to run automatically or manually under the control of a human using an Xbox Controller</ListItem>
-            <ListItem>Participated in the Power Up Ams 2022 event. Helped prepare the curriculum and taught Python to 70 6th-8th grade students in a 2-week online bootcamp</ListItem>
+            <ListItem>Participated in the Power Up Ams 2022 event. Helped prepare the curriculum and taught Python to 200 6th-8th grade students in a 2-week online bootcamp</ListItem>
           </UnorderedList>
         </Box>
 
@@ -206,8 +206,8 @@ const Resume: NextPage<ResumeProps> = () => {
           <UnorderedList mt={1} fontSize='xs'>
             <ListItem>Helped rebuild the website of the Vietnam National University (VNU) from a Wordpress website to a PHP Laravel application</ListItem>
             <ListItem>Advanced to the Semi-Final round of Build On Vietnam 2022, a national hackathon for college students</ListItem>
-            <ListItem>Helped build a 20-week curriculum and taught 30 6th-8th grade students micro:bit programming with Microsoft MakeCode</ListItem>
-            <ListItem>Tutored 10 9th-graders student who all successfully passed the high school entrance exam and got into Hanoi-Amsterdam High School for the Gifted</ListItem>
+            <ListItem>Helped build a 20-week curriculum and taught 50 6th-8th grade students micro:bit programming with Microsoft MakeCode</ListItem>
+            <ListItem>Tutored 15 9th-graders student who all successfully passed the high school entrance exam and got into Hanoi-Amsterdam High School for the Gifted</ListItem>
           </UnorderedList>
         </Box>
       </Section>
@@ -241,7 +241,7 @@ const Resume: NextPage<ResumeProps> = () => {
             <ListItem>Made the app available on native platforms i.e. Windows (using Electron) and Android (using Ionic and Capacitor)</ListItem>
             <ListItem>Gathered over 7,300 debate motions and translated them into Vietnamese for the Vietnamese Debate Community</ListItem>
             <ListItem>Added extensive documentation to help other developers contribute or rebuild the project from scratch</ListItem>
-            <ListItem>The application has 250 monthly active users</ListItem>
+            <ListItem>The application has over 13000 monthly active users.</ListItem>
           </UnorderedList>
         </Box>
 

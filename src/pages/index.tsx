@@ -204,7 +204,7 @@ const Home: NextPage = () => (
       <Heading as='h3' variant='section-title'>
         Resume
       </Heading>
-      <NextLink href='/miscellaneous/Resume.pdf' passHref>
+      <NextLink href='/miscellaneous/Resume - updated.pdf' passHref>
         <NoUnderlineLink download target='_blank'>
           <Button
             leftIcon={<DownloadIcon />}
